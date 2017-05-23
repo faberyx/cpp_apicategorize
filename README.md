@@ -7,3 +7,9 @@ Libraries used:
 - libmicrohttpd (https://www.gnu.org/software/libmicrohttpd/)
 - LMDB (https://github.com/LMDB)
 - silicon (https://github.com/matt-42/silicon)
+
+
+Build with:
+clang++ -std=c++14 -I /var/lib/include *.cc -llmdb -lboost_system -lmicrohttpd -o webserver
+
+./webserver
